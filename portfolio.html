@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Videograph Template" />
+    <meta name="keywords" content="Videograph, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jumshanty Production</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/site.webmanifest" />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script nonce="7b1125ef-de8b-4cfa-8673-6359706bcd7f">
+      (function (w, d) {
+        !(function (Y, Z, _, ba) {
+          Y[_] = Y[_] || {};
+          Y[_].executed = [];
+          Y.zaraz = { deferred: [], listeners: [] };
+          Y.zaraz.q = [];
+          Y.zaraz._f = function (bb) {
+            return function () {
+              var bc = Array.prototype.slice.call(arguments);
+              Y.zaraz.q.push({ m: bb, a: bc });
+            };
+          };
+          for (const bd of ["track", "set", "debug"])
+            Y.zaraz[bd] = Y.zaraz._f(bd);
+          Y.zaraz.init = () => {
+            var be = Z.getElementsByTagName(ba)[0],
+              bf = Z.createElement(ba),
+              bg = Z.getElementsByTagName("title")[0];
+            bg && (Y[_].t = Z.getElementsByTagName("title")[0].text);
+            Y[_].x = Math.random();
+            Y[_].w = Y.screen.width;
+            Y[_].h = Y.screen.height;
+            Y[_].j = Y.innerHeight;
+            Y[_].e = Y.innerWidth;
+            Y[_].l = Y.location.href;
+            Y[_].r = Z.referrer;
+            Y[_].k = Y.screen.colorDepth;
+            Y[_].n = Z.characterSet;
+            Y[_].o = new Date().getTimezoneOffset();
+            if (Y.dataLayer)
+              for (const bk of Object.entries(
+                Object.entries(dataLayer).reduce(
+                  (bl, bm) => ({ ...bl[1], ...bm[1] }),
+                  {}
+                )
+              ))
+                zaraz.set(bk[0], bk[1], { scope: "page" });
+            Y[_].q = [];
+            for (; Y.zaraz.q.length; ) {
+              const bn = Y.zaraz.q.shift();
+              Y[_].q.push(bn);
+            }
+            bf.defer = !0;
+            for (const bo of [localStorage, sessionStorage])
+              Object.keys(bo || {})
+                .filter((bq) => bq.startsWith("_zaraz_"))
+                .forEach((bp) => {
+                  try {
+                    Y[_]["z_" + bp.slice(7)] = JSON.parse(bo.getItem(bp));
+                  } catch {
+                    Y[_]["z_" + bp.slice(7)] = bo.getItem(bp);
+                  }
+                });
+            bf.referrerPolicy = "origin";
+            bf.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(Y[_])));
+            be.parentNode.insertBefore(bf, be);
+          };
+          ["complete", "interactive"].includes(Z.readyState)
+            ? zaraz.init()
+            : Y.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, "zarazData", "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="index.html"
+                ><img src="img/logo.png" alt="" class="logo_img"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="contact.html">Book</a></li>
+                </ul>
+              </nav>
+              <div class="header__nav__social">
+                <a href="https://www.facebook.com/Jumshantyproduction"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/jumshanty_prod?s=11"><i class="fa fa-twitter"></i></a>
+                <a
+                  href="https://instagram.com/jumshanty_productions?igshid=OGQ5ZDc2ODk2ZA=="
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCjaF9ClprWWp1C9_-LYoPjg"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
+    </header>
+
+    <div
+      class="breadcrumb-option spad set-bg"
+      data-setbg="img/hero/team-bg.jpg"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="breadcrumb__text">
+              <h2>Portfolio</h2>
+              <div class="breadcrumb__links">
+                <span class="breadcrumb__links-link">
+                <a href="/index.html">Home</a>
+                <span>Portfolio</span>
+            </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="portfolio spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="portfolio__filter">
+              <li class="active" data-filter="*">All</li>
+              <li data-filter=".photography">Photography</li>
+              <li data-filter=".videography">Videography</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio__gallery">
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/1.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/2.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/3.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/4.jpg"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/5.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/6.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/7.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/8.jpg"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/9.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/10.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/11.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/12.jpg"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/13.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/14.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/15.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/16.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/17.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/20.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/19.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/18.jpg"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/40.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/41.jpg"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/42.jpg"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mix photography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__picture set-bg"
+                data-setbg="img/portfolio/43.jpg"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/21.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=Bz-2NcjOjTo"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Ruger - Asiwaju</h4>
+                <span>Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/22.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=awgmYiQKPtg"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Asake - Joha</h4>
+                <span>Dance</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/23.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=3p_Td1Ypp8M"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Karpaz Gate Marina</h4>
+                <span>Lifestyle</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/24.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=Fyj78QMWHK4"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Adekunle Gold in Cyprus</h4>
+                <span>Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/25.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=5p0DhFDiVZk"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Werewolf Camping Festival</h4>
+                <span>Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/26.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=v-TZyCDMLL8"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Dosh Lowkee Live in Beruit</h4>
+                <span>Lifestyle</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/27.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=kdwhZ5EDlc0"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Anybody by MC Dolat</h4>
+                <span>Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/28.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=xBtfWI3pxnk"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Blackboy ft Joe, Hybreed - Living</h4>
+                <span>Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/29.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=6qpHnNhPYPM"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Asake - Sungba</h4>
+                <span>Dance</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/30.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=FgIx3BSHN8A"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Fecto - Get them</h4>
+                <span>Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/31.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=BoCGsou4bS8"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Bad Boy Timz Live in Cyprus</h4>
+                <span>Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/32.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=V3UnzNrTv1I"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Rema - Time & attention</h4>
+                <span>Dance</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/33.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=tB12PgoNOVY"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Mavins - Wondamo</h4>
+                <span>Dance</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/34.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=2uG1azTNp4Y"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Grace Leandre - See Nobody</h4>
+                <span>Music (Viral)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/35.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=Hr6bbz_vfac"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Styled By Zenith Bank</h4>
+                <span>Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/work-2.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=QVBHt4dg5RU"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Seyi Vibez - Big Vibes</h4>
+                <span>Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/work-5.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=X6gEgOua77Q"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Yemi Alade - Tell Somebody</h4>
+                <span>Dance</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/work-6.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=WsaRU2K-e5w"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Oxlade Live in Cyprus</h4>
+                <span>Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/36.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=kqq7cuH2ToI"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Phizzikul - Cheese</h4>
+                <span>Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/37.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=Tzgx18FONBU"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Ferdas Cakery</h4>
+                <span>Advertisment</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix videography">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/38.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=Es3BgTPb1w4"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Ekin X Malika</h4>
+                <span>Proposal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="footer__top__logo">
+                <a href="index.html"
+                  ><img src="img/logo.png" alt="" class="logo_img"
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="footer__top__social">
+                <a href="https://www.facebook.com/Jumshantyproduction"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/jumshanty_prod?s=11"><i class="fa fa-twitter"></i></a>
+                <a
+                  href="https://instagram.com/jumshanty_productions?igshid=OGQ5ZDc2ODk2ZA=="
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCjaF9ClprWWp1C9_-LYoPjg"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p class="footer__copyright__text">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | Jumshanty Productions
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+      integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+      data-cf-beacon='{"rayId":"7d2326157eadc226","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
