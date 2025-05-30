@@ -39,19 +39,19 @@
     });
 
     /*------------------
-		Navigation
-	--------------------*/
+        Navigation
+    --------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
 
     /*------------------
-		Hero Slider
-	--------------------*/
+        Hero Slider
+    --------------------*/
     $('.hero__slider').owlCarousel({
         loop: true,
-        dots: true,
+        dots: false,
         mouseDrag: false,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
@@ -60,7 +60,10 @@
         smartSpeed: 1200,
         autoHeight: false,
         autoplay: true,
-    });
+        autoplayTimeout: 5000, // time between slides
+        autoplayHoverPause: false
+      });
+      
 
     var dot = $('.hero__slider .owl-dot');
     dot.each(function () {
@@ -71,6 +74,8 @@
             $(this).html(index);
         }
     });
+
+
 
     /*------------------
         Testimonial Slider
@@ -148,6 +153,27 @@
             }
         }
     });
+
+    // Add this to your main.js file after the existing hero slider code
+
+/*------------------
+    About Me Slider
+--------------------*/
+$('.about__slider').owlCarousel({
+    loop: true,
+    dots: true,
+    mouseDrag: true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items: 1,
+    margin: 0,
+    smartSpeed: 1200,
+    autoHeight: false,
+    autoplay: true,
+    autoplayTimeout: 4000, // 4 seconds between slides
+    autoplayHoverPause: true
+});
+
 
     /*------------------
         Video Popup

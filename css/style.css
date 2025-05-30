@@ -140,8 +140,16 @@ ol {
 .set-bg {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:top center;
+  background-position: center;
   /* height: 700px */
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-me-set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -539px 0;
+  }
 }
 
 .spad {
@@ -266,7 +274,7 @@ ol {
   top: 0;
   width: 100%;
   background: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
   z-index: 9;
 }
 
@@ -277,7 +285,24 @@ ol {
   display: inline-block;
 }
 .logo_img{
-  height: 85px;
+  height: 10rem;
+  
+}
+
+.slicknav_menu{
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .slicknav_menu {
+    position: absolute !important;
+    right: 2% !important;
+    top: 34% !important;
+  }
+
+  .slicknav_menu{
+    display: block;
+  }
 }
 
 .header__nav__option {
@@ -405,10 +430,46 @@ ol {
   opacity: 1;
 }
 
+
+
+
+
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero__slider,
+.hero__item,
+.content-overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+
+
+
+
+
 .hero__text{
-background-color: #4d4d4d;
+/* background-color: #4d4d4d; */
 opacity: .8;
-padding:10px
+padding:10px;
+border: 8px solid white;
 }
 
 .hero__slider.owl-carousel .owl-dots {
@@ -419,6 +480,7 @@ padding:10px
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+  
 }
 .hero__slider.owl-carousel .owl-dots button {
   color: #adadad;
@@ -466,6 +528,7 @@ padding:10px
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
+  font-weight: bold;
 }
 .hero__text h2 {
   color: #ffffff;
@@ -684,6 +747,7 @@ padding:10px
 -----------------------*/
 .team {
   padding-bottom: 90px;
+  background-color: black;
 }
 
 .section-title.team__title {
@@ -812,22 +876,42 @@ font-size: 24px;
 }
 
 .callto__text h2 {
-  color: rgb(2, 19, 32);;
+  color: #fff;
   font-size: 42px;
   font-weight: 700;
   line-height: 55px;
   margin-bottom: 22px;
 }
+
+@media only screen and (max-width: 767px) {
+  .callto__text h2 {
+    color: #4f4545;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 22px;
+  }
+
+  .callto__text p {
+    font-size: 15px;
+    color: rgb(2, 19, 32);
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    font-weight: bold;
+  }
+}
 .callto__text p {
   font-size: 15px;
-  color: rgb(2, 19, 32);
+  color: #fff;
   opacity: 0.7;
   text-transform: uppercase;
   margin-bottom: 55px;
+  font-weight: bold;
 }
 .callto__text a {
   color: #ffffff;
-  background: #00bfe7;
+  background: #ffc107;
   font-size: 15px;
   font-weight: 700;
   font-family: "Play", sans-serif;
@@ -1042,6 +1126,62 @@ font-size: 24px;
 .about__text__desc {
   margin-top: -10px;
 }
+
+.about__slider.owl-carousel .owl-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.about__slider.owl-carousel .owl-dots button {
+  height: 8px;
+  width: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+}
+
+.about__slider.owl-carousel .owl-dots button.active {
+  background: #00bfe7;
+}
+
+.about__slider.owl-carousel .owl-dots button:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Ensure the carousel container has proper positioning */
+.about__slider {
+  position: relative;
+}
+
+/* Increase height for about me carousel images */
+.about__slider .team__item {
+  height: 600px !important; /* Increased from default 390px */
+  background-size: cover !important;
+  /* background-position: center !important; */
+  background-position: -55px 37px;
+  background-repeat: no-repeat !important;
+}
+
+/* Responsive heights for smaller screens */
+@media only screen and (max-width: 991px) {
+  .about__slider .team__item {
+    height: 500px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about__slider .team__item {
+    height: 450px !important;
+  }
+}
+
 
 /*---------------------
   Testimonial
@@ -2042,7 +2182,7 @@ font-size: 24px;
   }
 
   .callto__text{
-    background-color: #fff;
+    background-color: #ffffff38;
     padding: 20px;
     opacity: .8;
   }
